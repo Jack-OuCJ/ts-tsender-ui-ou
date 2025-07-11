@@ -14,6 +14,10 @@ Smart Contracts: https://github.com/Cyfrin/TSender/
     - [e2e](#e2e)
 - [Contributing](#contributing)
 
+# Example
+Here is a sample after the completion of the project. After deployment, you can connect your wallet here, enter the token address, recipient, and amounts for the airdrop functionality to target these accounts.
+![Example Image](./public/example.png)
+
 # Getting Started
 
 ## Requirements
