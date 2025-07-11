@@ -4,12 +4,17 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "next dev --turbopack",
-    "anvil": "anvil --load-state tsender-deployed.json",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "test:unit": "vitest"
+    "anvil": "anvil --load-state tsender-deployed.json",
+    "coverage": "pnpm vitest run --coverage",
+    "test:unit": "vitest",
+    "test:cache": "pnpm synpress",
+    "test:e2e": "pnpm exec playwright test",
+    "format": "prettier --write \"src/**/*.{ts,tsx}\"",
+    "format:check": "prettier --check \"src/**/*.{ts,tsx}\""
   },
   "dependencies": {
     "@rainbow-me/rainbowkit": "2.2.4",
